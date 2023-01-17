@@ -1,0 +1,47 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/app_yolov8",
+            "args": [
+
+            "--model=   ../data/yolov8/yolov8n.trt",
+            "--size=    640",
+            
+            // batch size
+            "--batch_size= 4",
+
+
+            // video
+            //"--video=   ../data/people640640.mp4",
+            //"--video=   ../data/face-demographics-walking-and-pause.mp4",
+            //"--video=   ../data/nba.mp4",
+            
+
+            // image
+            "--img= ../data/6406407.jpg",
+            //"--img= ../data/6406401.jpg",
+            
+
+            // camera
+            //"--cam_id=  0",
+            
+            "--show",
+            "--savePath= build/"
+        ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            //"preLaunchTask": "C/C++: g++ build active file",
+            //"miDebuggerPath": "/usr/bin/gdb"
+
+          }
+          
+
+    ]
+}
