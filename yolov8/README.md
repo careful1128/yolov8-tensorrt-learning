@@ -52,20 +52,20 @@ mkdir build
 cd build
 cmake ..
 make -j10
-# note: the dstImage will be saved in tensorrt-alpha/yolov8/build by default
+# note: 效果图默认保存在路径：yolov8-tensorrt/yolov8/build
 
 ## 640
-# infer image
+# 推理一张图
 ./app_yolov8  --model=../../data/yolov8/yolov8n.trt --size=640 --batch_size=1  --img=../../data/6406407.jpg   --show --savePath
-./app_yolov8  --model=../../data/yolov8/yolov8n.trt --size=640 --batch_size=8  --video=../../data/people.mp4  --show --savePath
+./app_yolov8  --model=../../data/yolov8/yolov8n.trt --size=640 --batch_size=8  --video=../../data/people.mp4  --show --savePath  # 视频文件需要自己准备
 
-# infer video
-./app_yolov8  --model=../../data/yolov8/yolov8n.trt     --size=640 --batch_size=8  --video=../../data/people.mp4  --show --savePath=../
+# 推理一个视频
+./app_yolov8  --model=../../data/yolov8/yolov8n.trt     --size=640 --batch_size=8  --video=../../data/people.mp4  --show --savePath=../ # 视频文件需要自己准备
 
-# infer camera
+# 推理摄像头
 ./app_yolov8  --model=../../data/yolov8/yolov8n.trt     --size=640 --batch_size=2  --cam_id=0  --show
 
 ## 1280
-# infer camera
+# 大模型推理摄像头
 ./app_yolov8  --model=../../data/yolov8/yolov8x6.trt     --size=1280 --batch_size=2  --cam_id=0  --show
 ```
