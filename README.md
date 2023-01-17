@@ -1,4 +1,4 @@
-# TensorRT-YOLOv8
+# YOLOv8-TensorRT
 <div align="center">
 
   [![Cuda](https://img.shields.io/badge/CUDA-11.3-%2376B900?logo=nvidia)](https://developer.nvidia.com/cuda-toolkit-archive)
