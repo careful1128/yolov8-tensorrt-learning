@@ -40,25 +40,12 @@ YOLOv8部署（基于TensorRT、CUDA），一个end2end的cuda c实现。<br>
 - opencv3.x or 4.x（仅用于可视化）
 </details>
 
-<details>
-<summary>创建Python环境(可选）</summary>
-
-```bash
-# install miniconda first
-conda create -n tensorrt-alpha python==3.8 -y
-conda activate tensorrt-alpha
-git clone https://github.com/FeiYull/tensorrt-alpha
-cd tensorrt-alpha
-pip install -r requirements.txt  
-```
-</details>
-
 ## 快速开始
 ### Ubuntu18.04
 设置TensorRT根目录（安装目录）路径:
 ```bash
-git clone https://github.com/FeiYull/tensorrt-alpha
-cd tensorrt-alpha/cmake
+git clone https://github.com/FeiYull/yolov8-tensorrt
+cd yolov8-tensorrt/cmake
 vim common.cmake
 # 把common.cmake文件第20行中的TensorRT_ROOT修改成您的TensorRT安装目录, 例如改成如下:
 # set(TensorRT_ROOT /root/TensorRT-8.4.2.4)

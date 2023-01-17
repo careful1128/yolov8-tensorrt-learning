@@ -46,7 +46,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/TensorRT-8.4.2.4/lib
 ```
 ## 3.运行
 ```bash
-git clone https://github.com/FeiYull/tensorrt-alpha
+git clone https://github.com/FeiYull/yolov8-tensorrt
 cd tensorrt-alpha/yolov8
 mkdir build
 cd build
