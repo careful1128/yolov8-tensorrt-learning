@@ -10,8 +10,9 @@
   </div>
 
 ## 介绍
-基于TensorRT、CUDA C加速yolov8，一个end2end的cuda c实现。<br>
+YOLOv8部署（基于TensorRT、CUDA），一个end2end的cuda c实现。<br>
 （如果您还想在TensorRT下部署YOLOv7、YOLOv6、YOLOv5、YOLOv4、YOLOv3等模型，请看我的另一个仓库：TensorRT-Alpha：https://github.com/FeiYull/tensorrt-alpha）
+注：opencv仅用于可视化！
 
 ## 更新
 - 2023.01.08  🚀 全网最快支持yolov8的tensorrt部署
@@ -25,7 +26,7 @@
 - cudnn8.2.0
 - gcc7.5.0
 - tensorrt8.4.2.4
-- opencv3.x or 4.x
+- opencv3.x or 4.x（仅用于可视化）
 - cmake3.10.2
 </details>
 
@@ -36,7 +37,7 @@
 - cudnn8.2.0
 - visual studio 2017 or 2019 or 2022
 - tensorrt8.4.2.4
-- opencv3.x or 4.x
+- opencv3.x or 4.x（仅用于可视化）
 </details>
 
 <details>
